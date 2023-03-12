@@ -1,5 +1,6 @@
 const submitButton = document.getElementById("submit")
 
-submitButton.addEventListener('click',()=>{
-    console.log('submit button click');
+submitButton.addEventListener('click',(e)=>{
+    e.preventDefault();
+    console.log(e.target.name.value);
 })
