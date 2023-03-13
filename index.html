@@ -21,27 +21,42 @@
     <button id="location">See Your Location</button>
 
     <!-- problem number -3 -->
-    
+
     <form id="submit">
-        <label for="name">Name:</label>
-        <input  type="text" value="" name="name" id="">
+       <div>
+         <label for="name">Name:</label>
+        <input  type="text" value="" name="name" id="name">
+        </div>
+        <div>
+            <button id="name_delete">DELETE</button>
+            <button id="name_send">SEND NAME</button>
+        </div>
 
         <br>
-        <label for="email">email:</label>
-        <input  type="email" value="" name="email" id="">
+        <div>
+            <label for="email">email:</label>
+            <input  type="email" value="" name="email" id="email">
+        </div>
+        <div>
+            <button id="email_delete">DELETE EMAIL</button>
+            <button id="email_send">SEND EMAIL</button>
+        </div>
 
         <br>
-         <label for="color">Color:</label>
-        <input  type="color" value="" name="color" id=""> 
 
-        <br>
-        <label for="name">Date:</label>
-        <input  type="date" value="" name="date" id="">
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button id="message_delete">DELETE MESSAGE </button>
+            <button id="message_send">SEND MESSAGE</button>
+        </div>
 
         <br>
         <input  type="submit" value="submit">
     </form>
-
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>
